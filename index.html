@@ -2336,7 +2336,7 @@
             data.forEach(item => {
                 // Group Container
                 const group = document.createElement('div');
-                group.className = 'flex flex-col items-center w-full max-w-[150px] group';
+                group.className = 'flex flex-col items-center w-full max-w-[150px] group h-full relative';
 
                 // Bars Container
                 const barsWrapper = document.createElement('div');
@@ -2355,7 +2355,7 @@
 
                 // Label
                 const label = document.createElement('div');
-                label.className = 'mt-4 font-mono text-xs md:text-sm font-bold text-slate-400';
+                label.className = 'absolute -bottom-8 left-0 right-0 text-center mt-4 font-mono text-xs md:text-sm font-bold text-slate-400';
                 label.innerText = item.label;
 
                 group.appendChild(barsWrapper);
